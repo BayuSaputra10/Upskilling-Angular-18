@@ -1,0 +1,10 @@
+<div class="flex">
+  <div class="w-1/2 p-2">
+    <h1 class="text-xl font-bold">Parent Component</h1>
+
+    <h1 class="text-5xl font-bold text-red-600">{{ counter }}</h1>
+  </div>
+  <div class="w-1/2 p-2">
+    <app-child [titleChild]="titleParent" [(counter)]="counter"></app-child>
+  </div>
+</div>

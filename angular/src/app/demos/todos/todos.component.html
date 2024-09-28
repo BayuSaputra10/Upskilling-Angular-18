@@ -1,0 +1,19 @@
+<div class="container mx-auto p-4">
+  <h1 class="text-2xl font-bold mb-4 text-center">TODO APPLICATION</h1>
+  <hr class="border-b-2 border-blue-500 w-1/4 mx-auto mb-6" />
+  <div class="flex justify-center">
+    <div class="w-1/2 p-2">
+      <h2 class="text-xl font-bold mb-2">List</h2>
+      <app-todo-list
+        [todos]="todos"
+        (toggleTodo)="onToggleTodo($event)"
+        (editTodo)="onEditTodo($event)"
+        (deleteTodo)="onDeleteTodo($event)"
+      ></app-todo-list>
+    </div>
+    <div class="w-1/2 p-2">
+      <h2 class="text-xl font-bold mb-2">Form</h2>
+      <app-todo-form [(todo)]="todo"></app-todo-form>
+    </div>
+  </div>
+</div>

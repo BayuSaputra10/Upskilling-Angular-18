@@ -1,0 +1,27 @@
+<form
+  [formGroup]="todoForm"
+  class="mb-4 p-4 bg-white rounded-md shadow-md"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="flex items-center mb-4">
+    <input
+      formControlName="isDone"
+      type="checkbox"
+      class="mr-2 leading-tight"
+    />
+    <input
+      formControlName="name"
+      id="name"
+      type="text"
+      placeholder="Todo"
+      class="flex-grow p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+    />
+    <button
+      [disabled]="!todoForm.valid"
+      type="submit"
+      class="ml-2 bg-blue-500 text-white px-4 py-2 rounded-md"
+    >
+      SIMPAN
+    </button>
+  </div>
+</form>

@@ -1,0 +1,33 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Belajar TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist",
+    "watch": "tsc --watch",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "Jution Candra Kirana",
+  "repository": {
+    "type": "git",
+    "url": "https://git.enigmacamp.com/enigma-camp/upskilling-class/01040726-upskilling-angular/jution-ck/hands-on"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.4.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^3.3.2"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
+}
